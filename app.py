@@ -65,6 +65,9 @@ logger.info(f"Available tables in the database: {tables}")
 columns_result = db.run("SELECT c.name FROM PRAGMA_TABLE_INFO('nutrition_data') c")
 logger.info(f"Columns in 'nutrition_data' table: {columns_result}")
 
+data_count = db.run("SELECT COUNT(*) FROM nutrition_data")
+logger.info(f"Total records in 'nutrition_data' table: {data_count}")
+
 execute_query_tool = QuerySQLDatabaseTool(db=db)
 
 ##################################################################
