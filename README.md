@@ -11,13 +11,18 @@ sdk_version: 5.44.0
 국가 표준 식품 성분 기반 영양소 분석 AI 에이전트입니다.
 자연어 질문을 SQL 쿼리로 변환하여 정확한 영양소 정보를 제공합니다.
 
+Demo site: <https://huggingface.co/spaces/webispy/gradio-demo-test>
+
+![screenshot_default](image/screenshot_default.png)
+
 * 자료 출처: [식품성분표(10개정판).xlsx](https://www.data.go.kr/data/15123901/fileData.do) ("국가표준식품성분 Database 10.3" 시트)
 
 ### 동작 구조
 
 #### 자료 전처리
 
-[국가표준식품성분 Database 10.3-표 1.csv](data/국가표준식품성분%20Database%2010.3-표%201.csv) 문서를 sqlite DB 형태로 변환
+* [국가표준식품성분 Database 10.3-표 1.csv](data/국가표준식품성분%20Database%2010.3-표%201.csv) 문서를 sqlite DB 형태로 변환
+* [csv_converter.py](csv_converter.py) 스크립트 참조
 
 #### LangChain
 
@@ -32,6 +37,14 @@ sdk_version: 5.44.0
 #### Gradio
 
 대화형 인터페이스 보다는 답변에 대한 처리 과정을 볼 수 있도록 Blocks 인터페이스 사용
+
+##### 성공시 결과 화면
+
+![screenshot_success](image/screenshot_success_result.png)
+
+##### 지원하지 않는 요청 결과 화면
+
+![screenshot_not_supported](image/screenshot_not_supported.png)
 
 ### 설치 준비
 
