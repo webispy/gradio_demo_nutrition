@@ -124,7 +124,7 @@ Github Actions을 이용해 Git repo에 커밋이 올라가면 자동으로 Hugg
 
 현재는 기본적인 영양소 정보만 제공하고 있으나, 질병과 관련된 영양소 및 성분 자료를 추가하여 개인의 건강 상태에 맞춤화된 영양 정보를 제공할 계획입니다.
 
-현재는 Sqlite DB만을 사용하고 있는데, 질병 정보(논문 등)을 Vector store (Chroma DB 등)에 저장하여 같이 활용할 계획입니다.
+현재는 Sqlite DB만을 사용하고 있는데, 질병 정보(논문 등)를 Vector store (Chroma DB 등)에 저장하여 같이 활용할 계획입니다.
 
 ---
 
@@ -228,16 +228,3 @@ New Data Upload                         : 100%|███████████
   ...mo_nutrition/data/nutrition_data.db: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 1.82MB / 1.82MB
 Space available at https://huggingface.co/spaces/webispy/gradio-demo-test
 ```
-
----
-
-## 🔗 관련 링크
-
-- **라이브 데모**: [https://huggingface.co/spaces/webispy/gradio-demo-test](https://huggingface.co/spaces/webispy/gradio-demo-test)
-- **데이터 출처**: [공공데이터포털 - 식품성분표](https://www.data.go.kr/data/15123901/fileData.do)
-
----
-
-## 📝 라이선스
-
-이 프로젝트는 공공 데이터를 기반으로 하며, 교육 및 연구 목적으로 자유롭게 사용할 수 있습니다.
