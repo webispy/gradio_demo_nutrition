@@ -21,6 +21,13 @@ sdk_version: 5.44.0
 
 이 프로젝트는 한국 정부에서 제공하는 공식 식품 성분 데이터베이스를 활용하여, 사용자의 자연어 질문에 대해 정확한 영양소 정보를 제공하는 AI 어시스턴트입니다. LangChain과 LangGraph를 활용한 그래프 기반 워크플로우를 통해 복잡한 영양소 조회 과정을 자동화했습니다.
 
+식품별 아래의 성분들에 대해 조회가 가능합니다.
+- 일반성분 16개: 에너지, 수분, 단백질, 지방, 탄수화물 등
+- 무기질 12개: 칼슘, 철, 마그네슘 등
+- 비타민 33개: A, B, C 등
+- 아미노산 21개: 총 아미노산, 필수 아미노산, 개별 아미노산 등
+- 지방산 47개: 총 지방산, 포화/불포화/트랜스 지방산 및 개별 지방산 등
+
 ![Default Screenshot](image/screenshot_default.png)
 
 **데이터 출처**: [식품성분표(10개정판).xlsx](https://www.data.go.kr/data/15123901/fileData.do) - "국가표준식품성분 Database 10.3" 시트
@@ -60,6 +67,11 @@ sdk_version: 5.44.0
 
 #### ⚠️ 지원하지 않는 요청 처리
 ![Not Supported](image/screenshot_not_supported.png)
+
+#### ⏳ 처리중 상태
+![Progress1](image/screenshot_progress1.png)
+
+![Progress2](image/screenshot_progress2.png)
 
 ---
 
